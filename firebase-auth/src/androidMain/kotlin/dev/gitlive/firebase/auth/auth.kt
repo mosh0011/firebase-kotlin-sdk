@@ -19,7 +19,7 @@ import kotlinx.coroutines.tasks.await
 actual val Firebase.auth
     get() = FirebaseAuth(com.google.firebase.auth.FirebaseAuth.getInstance())
 
-actual fun Firebase.auth(app: FirebaseApp) =
+actual fun Firebase.auth(app: irebaseApp) =
     FirebaseAuth(com.google.firebase.auth.FirebaseAuth.getInstance(app.android))
 
 actual class FirebaseAuth internal constructor(val android: com.google.firebase.auth.FirebaseAuth) {
